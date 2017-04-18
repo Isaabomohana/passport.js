@@ -17,11 +17,11 @@ app.set('view engine', 'handlebars');
 
 
 app.get('/', function (req, res) {
-  res.render('index')
+  res.render('login')
 })
 
-app.get('/login', function (req, res) {
-  res.render('login')
+app.get('/home', function (req, res) {
+  res.render('index')
 })
 
 app.listen(4000, function () {
